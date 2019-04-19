@@ -1,0 +1,28 @@
+
+
+.user-leave {
+}
+
+.user-leave.user-leave-active {
+  /*transform: scale(1,0.4) translateX(360px);*/
+  transform: scale(0.60,0);
+  transition: 300ms ease-in;
+}
+
+.user-appear { 
+  transform: translateX(-360px);
+}
+
+.user-appear.user-appear-active {
+  transform:translateX(0);
+  transition: 300ms ease-in;
+}
+
+.bot-appear { 
+  transform:translateX(360px);
+}
+
+.bot-appear.bot-appear-active {
+  transform:translateX(0);
+  transition: 300ms ease-in;
+}

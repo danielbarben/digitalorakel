@@ -1,0 +1,18 @@
+:root {
+  --pink: #dd007A;
+  --blue: #111133;
+  --green: #17A600;
+  --white: #FFFFFF
+}
+
+html,
+body {
+  font-family: sans-serif;
+  background: #E0E0E0;
+  margin: 0;
+}
+
+#root {
+  background:white;
+  height:100%;
+}
