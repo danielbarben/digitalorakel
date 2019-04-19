@@ -1,5 +1,4 @@
 const express = require('express');
-const subdomain = require('express-subdomain');
 const router = require('./api/routes.js');
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 3000;
@@ -16,8 +15,8 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 app.use(bodyParser.json());
-//app.use(router)
-app.use(subdomain('api', router));
+app.use(router)
+//app.use(subdomain('api', router));
 
 app.listen(PORT, () => {
     console.log(`Listening on port: ${PORT}...`)
