@@ -96,10 +96,6 @@ const findConclusionByProject = (req, res) => {
 const countItems = (req, res) => {
     const projectId = req.params.projectId;
     let total = 0;
-    /*db.models.Statistics
-    .findAndCountAll()
-    .then(counted => {
-        //total = counted.count;*/
         db.models.Conclusions
         .findAll({
             where: {
@@ -141,39 +137,6 @@ const countItems = (req, res) => {
                 })
             }
         })
-    /*})*/
-};
-
-const countItemsbackup = (req, res) => {
-    const projectId = req.params.projectId
-    db.models.Conclusions
-    .findAll({where: {
-        projectId : projectId
-    }
-})
-    .then(projects => {
-        const tmp = projects.map((item, index) => {return item.title})
-        const countresult = [];
-        counter = 0;
-        for (el of tmp) {
-            db.models.Statistics.findAndCountAll({
-                where: {
-                   item: el
-                }
-            })
-            .then(cn => {
-                countresult.push([cn.count])  //cn senden und schauen, ob der name darin vorkommt
-                counter ++
-                if (counter === tmp.length) {
-                    let resultToSend = [];
-                    for (index in tmp) {
-                        resultToSend.push([countresult[index] + ': ' + tmp[index]])
-                    }
-                    //sort by countresult
-                    res.status(200).send(resultToSend)}
-            })
-        }
-    })
 };
 
 module.exports = {
