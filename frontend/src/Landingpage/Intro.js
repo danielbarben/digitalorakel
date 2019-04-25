@@ -4,7 +4,7 @@ import './landingpage.css';
 class Intro extends Component {
 
   render() {
-    const content = <div className='intro'>Bei welcher Entscheidung dürfen wir Dir helfen? Bitte triff eine Wahl:</div>
+    const content = <div className='intro'>Wähle ein Orakel:</div>
     return <div>{content}</div>
   }
 }
