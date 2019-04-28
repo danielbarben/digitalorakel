@@ -10,49 +10,23 @@ const landingpage = (req, res) => {
             status : 'online'
         },
         order: [['order', 'ASC']]
-    })
-    .then(projects => {
-        res.status(200).send(projects);
-    })
-};
-
-const findAllProjects = (req, res) => {
-    db.models.Projects
-    .findAll({
-        include: [{
-            model: db.models.Questions, include: [db.models.Answers]
-        }]
-    })
-    .then(projects => {
-        res.status(200).send(projects);
+    }).then(projects =>  {
+        res.status(200).send(projects)
     })
 };
-
-const findProjectsById = (req, res) => {
+const findFirstQuestion = (req, res) => {
     const projectId = req.params.projectId
     db.models.Projects
     .findByPk(projectId, {
         include: [{
-            model: db.models.Questions, include: [db.models.Answers]
-        }]
-    })
-    .then(projects => {
-        res.status(200).send(projects);
-    })
-};
-
-const findFirstQuestion = (req, res) => {
-    const projectId = req.params.projectId
-    db.models.Projects
-    .findByPk(projectId, {include: [{
-        model: db.models.Questions}], order: [
+            model: db.models.Questions
+        }], order: [
             [db.models.Questions, 'id', 'asc']]         
     })
     .then(projects => {
-        res.status(200).send(projects.questions[0]);
+        projects === null ? res.status(404).send(["Entschuldigung, das Orakel ist überfragt"]) : res.status(200).send(projects.questions[0])
     })
 };
-
 const findQuestionById = (req, res) => {
     const questionId = req.params.questionId
     db.models.Questions
@@ -60,63 +34,31 @@ const findQuestionById = (req, res) => {
         include: [db.models.Answers]
     })
     .then(question  => {
-        question === null ? res.status(404).send(["Jetzt bin ich überfragt!"]) : res.send(question)
+        question === null ? res.status(404).send(["Entschuldigung, das Orakel ist überfragt"]) : res.status(200).send(question)
     })
 };
-
 const findConclusionById = (req, res) => {
     const conclusionId = req.params.conclusionId;
     db.models.Conclusions.findByPk(conclusionId)
     .then(conclusion => {
-        conclusion === null ? res.status(404).send(["Jetzt bin ich überfragt!"]) : res.send(conclusion)
+        conclusion === null ? res.status(404).send(["Entschuldigung, das Orakel ist überfragt"]) : res.status(200).send(conclusion)
     })
 };
-
-const saveStatistics = (req,res) => {
-    const {conclusion} = req.body;
-    if (conclusion) {
-        db.models.Statistics.create({
-            item:conclusion
-        })
-        .then(conclusion => res.send(conclusion))
-    }
-    else {
-        res.send({
-            RequiredData: ["conclusion"]
-        })
-    }
-};
-
-const findConclusionByProject = (req, res) => {
-    const projectId = req.params.projectId
-    db.models.Conclusions
-    .findAll({where: {
-        projectId : projectId
-    }
-})
-    .then(projects => {
-        const tmp = projects.map((item, index) => {
-            return item.title
-        })
-        res.status(200).send(tmp);
-    })
-};
-
 const countItems = (req, res) => {
     const projectId = req.params.projectId;
     let total = 0;
     let countresult = [];
-    let counter = 0;
     db.models.Conclusions
     .findAll({
         where: {
             projectId : projectId
         }   
     })
-    .then(projects => {
-        const itemlist = projects.map((item, index) => {
+    .then(conclusions => {
+        const itemlist = conclusions.map((item, index) => {
             return item.title
         })
+        itemlist.length === 0 ? res.status(404).send(["Entschuldigung, das Orakel ist überfragt"]) : ''
         for (el of itemlist) {
             db.models.Statistics.findAndCountAll({
                 where: {
@@ -125,12 +67,11 @@ const countItems = (req, res) => {
             })
             .then(cn => {
                 countresult.push(cn)
-                counter ++
                 total = total + cn.count;
-                if (counter === itemlist.length) {
+                if (countresult.length === itemlist.length) {
                     let resultToSend = [];
                     for (index in itemlist) {
-                        if (countresult[index].count>0) {
+                        if (countresult[index].count > 0) {
                             resultToSend.push({'count':Math.round(100/total*countresult[index].count), 'item':countresult[index].rows[0].item})
                         }
                     }
@@ -149,11 +90,9 @@ const countItems = (req, res) => {
         }
     })
 };
-
 const customersById = (req, res) => {
     const projectId = req.params.projectId;
-    let total = 0;
-    let counter = 0;
+    let result = [];
     db.models.Conclusions
     .findAll({
         where: {
@@ -162,37 +101,145 @@ const customersById = (req, res) => {
     })
     .then(projects => {
         const itemlist = projects.map((item, index) => {
-            return item.title
+            return {'projectId': item.projectId, 'title': item.title}
         })
+        itemlist.length === 0 ? res.status(404).send(["Entschuldigung, das Orakel ist überfragt"]) : ''
         for (el of itemlist) {
             db.models.Statistics.findAndCountAll({
                 where: {
-                    item: el
+                    item: el.title
                 }
             })
             .then(cn => {
-                counter ++
-                total = total + cn.count;
-                if (counter === itemlist.length) {
-                    res.status(200).send({'total':total})
+                result.push(cn.count)
+                if (result.length === itemlist.length) {
+                    let sum = result.reduce((partial_sum, a) => partial_sum + a); 
+                    res.status(200).send({'projectId': itemlist[0].projectId, 'total':sum})
                 }
             })
         }
     })
 };
-
-
+const customers = (req, res) => {
+    let result = [];
+    db.models.Projects
+    .findAll({
+        where: {
+            status : 'online'
+        },
+        order: [['id', 'ASC']]
+    })
+    .then(projects => {
+        const projectlist = projects.map((item,index) => {
+            return item.id
+        })
+        for (project of projectlist) {
+            let perproject = [];
+            db.models.Conclusions
+            .findAll({
+                where: {
+                    projectId : project
+                }
+            })
+            .then(projects => {
+                const itemlist = projects.map((item, index) => {
+                    return {'projectId': item.projectId, 'title': item.title} 
+                })
+                for (el of itemlist) {
+                    console.log(el.projectId)
+                    db.models.Statistics.findAndCountAll({
+                        where: {
+                            item: el.title
+                        }
+                    })
+                    .then(cn => {
+                        perproject.push(cn.count)
+                        if (perproject.length === itemlist.length) {
+                            console.log(itemlist)
+                            let sum = perproject.reduce((partial_sum, a) => partial_sum + a); 
+                            result.push({'projectId': itemlist[0].projectId, 'total': sum})
+                            if (result.length === projectlist.length) {
+                                res.status(200).send({result})
+                            }
+                        }
+                    })
+                }
+            })
+        }  
+    })
+};
+//helper
+const findQuestionsOfProject = (req, res) => {
+    const projectId = req.params.projectId
+    db.models.Questions
+    .findAll({
+        where: {
+            projectId : projectId
+        }
+    })
+    .then(questions  => {
+        const result = questions.map((item, index) => {
+            return {'id' : item.id, 'question' : item.question}
+        })
+        result.length === 0 ? res.status(404).send(["Jetzt bin ich überfragt!"]) : res.send(result)
+    })
+};
+const findConclusionsOfProject = (req, res) => {
+    const projectId = req.params.projectId
+    db.models.Conclusions
+    .findAll({
+        where: {
+            projectId : projectId
+        }
+    })
+    .then(conclusions  => {
+        const result = conclusions.map((item, index) => {
+            return {'id' : item.id, 'conclusion' : item.conclusion}
+        })
+        result.length === 0 ? res.status(404).send(["Jetzt bin ich überfragt!"]) : res.send(result)
+    })
+};
+const findProjectById = (req, res) => {
+    const projectId = req.params.projectId
+    db.models.Projects
+    .findByPk(projectId, {
+        include: [{
+            model: db.models.Questions, include: [db.models.Answers]
+        }]
+    })
+    .then(projects => {
+        projects === null ? res.status(404).send(["Entschuldigung, das Orakel ist überfragt"]) : res.status(200).send(projects);
+    })
+};
+//post
+const saveStatistics = (req,res) => {
+    const {conclusion} = req.body;
+    if (conclusion) {
+        db.models.Statistics.create({
+            item:conclusion
+        })
+        .then(conclusion => res.send(conclusion))
+    }
+    else {
+        res.send({
+            RequiredData: ["conclusion"]
+        })
+    }
+};
 
 module.exports = {
     homeRoute,
-    findAllProjects,
-    findProjectsById,
+    //findAllProjects,
+    findProjectById,
     findQuestionById,
     findConclusionById,
     saveStatistics,
     countItems,
-    findConclusionByProject,
+    customers,
+    //findConclusionByProject,
     findFirstQuestion,
     landingpage,
-    customersById
+    customersById,
+    findQuestionsOfProject,
+    findConclusionsOfProject
 }
