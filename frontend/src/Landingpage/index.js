@@ -19,7 +19,10 @@ class Landingpage extends Component {
     fetch(`${api}/landingpage`)
     .then(res => res.json())
     .then(item => {
-      this.setState({itemList: item, loading: false})
+      this.setState({
+        itemList: item, 
+        loading: false
+      })
     })
   }
   render() {

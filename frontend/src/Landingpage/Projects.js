@@ -16,6 +16,7 @@ class Projects extends Component {
     super(props);
     this.state = {
       itemList: [],
+      customerList : [],
       loading: true
     }
   }
@@ -24,7 +25,18 @@ class Projects extends Component {
     fetch(`${api}/landingpage`)
     .then(res => res.json())
     .then(item => {
-      this.setState({itemList: item, loading: false})
+      this.setState({
+        itemList: item,
+        loading: false
+      })
+    })
+    fetch(`${api}/customers`)
+    .then(res => res.json())
+    .then(item => {
+      this.setState({
+        customerList: item
+      })
+      
     })
   }
 
@@ -34,7 +46,8 @@ class Projects extends Component {
       } else {
         return this.state.itemList.map((item, index) => {
           const avatar = <div className='avatar'><img src={botPic[item.bot]} alt=''/></div>;
-          return <div className='chatitem bot' key={index}><div className='chatitem bot'>{avatar}<Link to={'/'+item.id} className='droplet'><p>{item.description}</p><p className='autor'>Text: {item.autor}</p></Link></div></div>;
+          return <div className='chatitem bot' key={index}><div className='chatitem bot'>{avatar}<Link to={'/'+item.id} className='droplet'><p>{item.description}</p><p className='autor'>Text: {item.autor}<br></br>{
+            this.state.customerList.length === 0 ? '0' : this.state.customerList.find(x => x.projectId === item.id).total} Orakelsprüche</p></Link></div></div>;
         })
     }
   }

@@ -12,7 +12,7 @@ class Conclusion extends Component {
     super(props);
     this.state = {
       text: '',
-      tmptext: 'Na, zufrieden?'
+      //tmptext: 'Na, zufrieden mit dem Orakelspruch?'
     }
   }
 
@@ -20,7 +20,9 @@ class Conclusion extends Component {
     fetch(`${api}/conclusions/${this.props.id}`)
     .then(res => res.json())
     .then(itemloaded => {
-      this.setState({text:<><p>{itemloaded.conclusion}</p><p> Na, zufrieden?</p></>})
+      this.setState({
+        text:<><p>{itemloaded.conclusion}</p><p> Na, zufrieden mit dem Orakelspruch?</p></>
+      })
       const body = JSON.stringify({conclusion: itemloaded.title})
       const headers = new Headers({
         'Content-Type': 'application/json'

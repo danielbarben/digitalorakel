@@ -23,8 +23,8 @@ class Statistics extends Component {
     fetch(`${api}/statistics/${this.props.id}`)
     .then(res => res.json())
     .then(item => {
-      let beautify = item.map((item, index) => <p className='conclusion'>{item.count}% {item.item}</p>);
-      let beautify2 = <p>Meine Statistik: {beautify}</p>
+      let beautify = item.map((item, index) => <span className='conclusion' key={index}>{item.count}% {item.item}<br></br></span>);
+      let beautify2 = <p key={100}>Meine Orakelsprüche:<br></br>{beautify}</p>
       this.setState({
         text: beautify2
       })
@@ -42,10 +42,10 @@ class Statistics extends Component {
         <Botrender bot={this.props.bot} text={this.state.text}/>
         <Userrender user={this.props.user} text={<>
         {/* Noch einmal */}
-        <p className = {this.state.clickable ? 'button' : ''} onClick = ''><Link to='./'>Bitte noch einmal Spielen!</Link></p>
+        <p className = {this.state.clickable ? 'button' : ''}><Link to='./'>Bitte noch einmal Spielen!</Link></p>
         </>}/>
         </div>)
-    }
+    } 
   }
 }
 

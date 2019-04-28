@@ -40,7 +40,6 @@ class App extends Component {
     newCounter++;
     //add new Chatitem to state
     this.setState({
-      //user: Du,
       itemList: newItem,
       counter: newCounter
     })
@@ -49,8 +48,7 @@ class App extends Component {
   // Statistik zeigen
   showStatistics = (i) => {
     let newItem = this.state.itemList;
-    newItem.push(<Statistics id={this.state.project} bot={this.state.bot} user={Du}/>)
-    //newItem.push(<Again startover={this.startover} key={this.state.counter+2} id={i} user={Du}/>)
+    newItem.push(<Statistics key={this.state.counter} id={this.state.project} bot={this.state.bot} user={Du}/>)
     let newCounter = this.state.counter;
     newCounter +=3;
     
@@ -64,10 +62,8 @@ class App extends Component {
   //Get conclusion
   conclusion = (i) => {
     let newItem = this.state.itemList;
-    //console.log(this.showStatistics)
     newItem.push(<Conclusion key={this.state.counter} id={i} bot={this.state.bot}/>)
-    //newItem.push(<Statistics key={this.state.counter+1} id={this.state.project} bot={this.state.bot}/>)
-    newItem.push(<Again startover={this.startover} showStatistics={this.showStatistics} key={this.state.counter+2} id={i} user={Du}/>)
+    newItem.push(<Again startover={this.startover} showStatistics={this.showStatistics} key={this.state.counter+1} id={i} user={Du}/>)
     let newCounter = this.state.counter;
     newCounter +=3;
     
@@ -82,11 +78,10 @@ class App extends Component {
     fetch(`${api}/landingpage`)
     .then(res => res.json())
     .then(item => {      
-      //let tmp = item.find( el => el.id == this.props.match.params.id);
       let tmp = item.find( el => el.id === Number(this.state.project));
       this.setState({bot: botPic[tmp.bot]})
     });
-    fetch(`${api}/projects/firstquestion/${this.state.project}`)
+    fetch(`${api}/firstquestion/${this.state.project}`)
     .then(res => res.json())
     .then(item => {
       let firstItem = [];
