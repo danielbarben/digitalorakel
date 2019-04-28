@@ -146,7 +146,6 @@ const customers = (req, res) => {
                     return {'projectId': item.projectId, 'title': item.title} 
                 })
                 for (el of itemlist) {
-                    console.log(el.projectId)
                     db.models.Statistics.findAndCountAll({
                         where: {
                             item: el.title
@@ -155,11 +154,10 @@ const customers = (req, res) => {
                     .then(cn => {
                         perproject.push(cn.count)
                         if (perproject.length === itemlist.length) {
-                            console.log(itemlist)
                             let sum = perproject.reduce((partial_sum, a) => partial_sum + a); 
                             result.push({'projectId': itemlist[0].projectId, 'total': sum})
                             if (result.length === projectlist.length) {
-                                res.status(200).send({result})
+                                res.status(200).send(result)
                             }
                         }
                     })
