@@ -1,6 +1,6 @@
 module.exports = [{
   projectId: 4,
-  question:"Berge oder Meer?"
+  question:"Hallo, ich bin Georg. ich helfe Dir bei der Wahl Deines nächsten Urlaubsziels. Fährst Du lieber in die Berge oder ans Meer?"
 },
 {
   projectId: 4,
