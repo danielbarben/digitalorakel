@@ -31,7 +31,7 @@ module.exports = [{
   bot: "Georg",
   description: "Ich sage Dir, wohin Du in die Ferien fahrten solltest",
   autor: "Maina Bolzli",
-  order: 3,
+  order: 5,
   status: 'offline'
 },
 {
@@ -40,8 +40,7 @@ module.exports = [{
   bot: "Sanja",
   description: "Was war nochmal an Ostern? Hast Du mehr Mitleid mit dem Osterhasen als mit dem Osterlamm? Und: Was machst Du im Osterstau? Ich sage Dir, welcher Typ Osterei Du bist.",
   autor: "BZ Ressort Kultur",
-  order: 1,
+  order: 4,
   status: 'online'
 }
-
 ];
