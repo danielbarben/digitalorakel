@@ -15,7 +15,7 @@
     "express": "^4.17.1",
     "node": "^11.15.0",
     "pg": "^7.18.2",
-    "sequelize": "^4.44.4",
+    "sequelize": "^5.15.1",
     "sqlite3": "^4.2.0"
   },
   "devDependencies": {
