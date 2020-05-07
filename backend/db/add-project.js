@@ -1,5 +1,5 @@
 const db = require('./index.js');
-const proejctlist = require('./data/XXXprojects.js');
+const proejctlist = require('./data/XXXnewproject.js');
 
 db.conn.sync().then(() => {
     proejctlist.forEach(project => {

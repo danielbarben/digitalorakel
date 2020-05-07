@@ -1,10 +1,20 @@
-module.exports = [{
+module.exports = [
+  {
+    id:6,
+    name: "Silvestertyp",
+    bot: "Sanja",
+    description: "Weisst Du noch nicht, was Du an Silvester unternehmen sollst? Ich finde für Dich den perfekten Ort zu Deinem Knalltütenpotenzial.",
+    autor: "BZ-Kulturteam",
+    order: 1,
+    status: 'offline'
+  },
+  {
   id:3,
   name: "Krippenspiel",
   bot: "Sanja",
   description: "Der Esel oder doch eher Maria? Finde heraus, welche Figur Du im weihnächtlichen Krippenspiel bist.",
   autor: "Maria Künzli",
-  order: 2,
+  order: 6,
   status: 'online'
 },
 {
@@ -22,7 +32,7 @@ module.exports = [{
   bot: "Georg",
   description: "Nicht «the same procedure», James! Ich empfehle Dir einen Film zu Silvester.",
   autor: "Stefanie Christ",
-  order: 1,
+  order: 2,
   status: 'online'
 },
 {

@@ -167,6 +167,14 @@ const customers = (req, res) => {
     })
 };
 //helper
+const findAllProjects = (req, res) => {
+    db.models.Projects
+    .findAll({
+        order: [['id', 'ASC']]
+    }).then(projects =>  {
+        res.status(200).send(projects)
+    })
+};
 const findQuestionsOfProject = (req, res) => {
     const projectId = req.params.projectId
     db.models.Questions
@@ -227,17 +235,16 @@ const saveStatistics = (req,res) => {
 
 module.exports = {
     homeRoute,
-    //findAllProjects,
     findProjectById,
     findQuestionById,
     findConclusionById,
     saveStatistics,
     countItems,
     customers,
-    //findConclusionByProject,
     findFirstQuestion,
     landingpage,
     customersById,
     findQuestionsOfProject,
-    findConclusionsOfProject
+    findConclusionsOfProject,
+    findAllProjects
 }

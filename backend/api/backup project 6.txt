@@ -1,0 +1,418 @@
+{
+id: 6,
+name: "Silvestertyp",
+bot: "Sanja",
+description: "Weisst Du, was Du an Silvester unternehmen sollst? Ich finde für Dich den perfekten Ort zu Deinem Knalltütenpotenzial.",
+autor: "BZ Ressort Kultur",
+order: 1,
+status: "online",
+createdAt: "2019-12-21T18:00:28.958Z",
+updatedAt: "2019-12-23T21:40:38.180Z",
+questions: [
+{
+id: 75,
+projectId: 6,
+question: "Wie steht es um Deine Feierlaune?",
+createdAt: "2019-12-22T08:23:18.210Z",
+updatedAt: "2019-12-22T08:23:18.210Z",
+answers: [
+{
+id: 205,
+answer: "Hoch die Tassen!",
+questionId: 75,
+nxt: "q80",
+createdAt: "2019-12-23T21:22:06.928Z",
+updatedAt: "2019-12-23T21:22:06.928Z"
+},
+{
+id: 206,
+answer: "Ohne mich, merci.",
+questionId: 75,
+nxt: "q76",
+createdAt: "2019-12-23T21:22:06.931Z",
+updatedAt: "2019-12-23T21:22:06.931Z"
+},
+{
+id: 207,
+answer: "Silvester ist überbewertet.",
+questionId: 75,
+nxt: "q86",
+createdAt: "2019-12-23T21:22:06.931Z",
+updatedAt: "2019-12-23T21:22:06.931Z"
+}
+]
+},
+{
+id: 76,
+projectId: 6,
+question: "Echt jetzt?",
+createdAt: "2019-12-22T08:23:18.212Z",
+updatedAt: "2019-12-22T08:23:18.212Z",
+answers: [
+{
+id: 208,
+answer: "Ja, Feste sind nicht mein Ding.",
+questionId: 76,
+nxt: "c41",
+createdAt: "2019-12-23T21:22:06.932Z",
+updatedAt: "2019-12-23T21:22:06.932Z"
+},
+{
+id: 209,
+answer: "Nun ja, nach den ersten zwei Gläsern ist alles möglich.",
+questionId: 76,
+nxt: "q77",
+createdAt: "2019-12-23T21:22:06.932Z",
+updatedAt: "2019-12-23T21:22:06.932Z"
+}
+]
+},
+{
+id: 77,
+projectId: 6,
+question: "Mit wem bist Du unterwegs?",
+createdAt: "2019-12-22T08:23:18.213Z",
+updatedAt: "2019-12-22T08:23:18.213Z",
+answers: [
+{
+id: 210,
+answer: "Mit Kind und Kegel.",
+questionId: 77,
+nxt: "q79",
+createdAt: "2019-12-23T21:22:06.933Z",
+updatedAt: "2019-12-23T21:22:06.933Z"
+},
+{
+id: 211,
+answer: "Mit Freunden.",
+questionId: 77,
+nxt: "q78",
+createdAt: "2019-12-23T21:22:06.933Z",
+updatedAt: "2019-12-23T21:22:06.933Z"
+},
+{
+id: 212,
+answer: "Mit dem Partner.",
+questionId: 77,
+nxt: "q78",
+createdAt: "2019-12-23T21:22:06.934Z",
+updatedAt: "2019-12-23T21:22:06.934Z"
+}
+]
+},
+{
+id: 78,
+projectId: 6,
+question: "Was ist Dein perfektes Essen?",
+createdAt: "2019-12-22T08:23:18.213Z",
+updatedAt: "2019-12-22T08:23:18.213Z",
+answers: [
+{
+id: 213,
+answer: "Döner.",
+questionId: 78,
+nxt: "c37",
+createdAt: "2019-12-23T21:22:06.934Z",
+updatedAt: "2019-12-23T21:22:06.934Z"
+},
+{
+id: 214,
+answer: "Fondue chinoise.",
+questionId: 78,
+nxt: "c40",
+createdAt: "2019-12-23T21:22:06.934Z",
+updatedAt: "2019-12-23T21:22:06.934Z"
+},
+{
+id: 215,
+answer: "Ein Mehrgänger.",
+questionId: 78,
+nxt: "q81",
+createdAt: "2019-12-23T21:22:06.935Z",
+updatedAt: "2019-12-23T21:22:06.935Z"
+}
+]
+},
+{
+id: 79,
+projectId: 6,
+question: "Wie partytauglich sind Deine Kinder?",
+createdAt: "2019-12-22T08:23:18.214Z",
+updatedAt: "2019-12-22T08:23:18.214Z",
+answers: [
+{
+id: 216,
+answer: "Ein Schluck Rimus in den Schoppen muss sein.",
+questionId: 79,
+nxt: "c41",
+createdAt: "2019-12-23T21:22:06.935Z",
+updatedAt: "2019-12-23T21:22:06.935Z"
+},
+{
+id: 217,
+answer: "Eine Tischbombe fehlt nie.",
+questionId: 79,
+nxt: "c40",
+createdAt: "2019-12-23T21:22:06.935Z",
+updatedAt: "2019-12-23T21:22:06.935Z"
+}
+]
+},
+{
+id: 80,
+projectId: 6,
+question: "Was trinkst Du um Mitternacht?",
+createdAt: "2019-12-22T08:23:18.214Z",
+updatedAt: "2019-12-22T08:23:18.214Z",
+answers: [
+{
+id: 218,
+answer: "Jahrgangs-Champagner.",
+questionId: 80,
+nxt: "c38",
+createdAt: "2019-12-23T21:22:06.936Z",
+updatedAt: "2019-12-23T21:22:06.936Z"
+},
+{
+id: 219,
+answer: "Bier.",
+questionId: 80,
+nxt: "q82",
+createdAt: "2019-12-23T21:22:06.936Z",
+updatedAt: "2019-12-23T21:22:06.936Z"
+},
+{
+id: 220,
+answer: "Ein Glas Wasser reicht mir.",
+questionId: 80,
+nxt: "q87",
+createdAt: "2019-12-23T21:22:06.937Z",
+updatedAt: "2019-12-23T21:22:06.937Z"
+},
+{
+id: 221,
+answer: "Einen grünen Smoothie.",
+questionId: 80,
+nxt: "q77",
+createdAt: "2019-12-23T21:22:06.937Z",
+updatedAt: "2019-12-23T21:22:06.937Z"
+}
+]
+},
+{
+id: 81,
+projectId: 6,
+question: "Wie brezelst Du Dich auf?",
+createdAt: "2019-12-22T08:23:18.215Z",
+updatedAt: "2019-12-22T08:23:18.215Z",
+answers: [
+{
+id: 222,
+answer: "Hauptsache knusprig.",
+questionId: 81,
+nxt: "c37",
+createdAt: "2019-12-23T21:22:06.937Z",
+updatedAt: "2019-12-23T21:22:06.937Z"
+},
+{
+id: 223,
+answer: "Abendgarderobe.",
+questionId: 81,
+nxt: "c38",
+createdAt: "2019-12-23T21:22:06.938Z",
+updatedAt: "2019-12-23T21:22:06.938Z"
+},
+{
+id: 224,
+answer: "Second-Hand-Kleider.",
+questionId: 81,
+nxt: "c39",
+createdAt: "2019-12-23T21:22:06.938Z",
+updatedAt: "2019-12-23T21:22:06.938Z"
+}
+]
+},
+{
+id: 82,
+projectId: 6,
+question: "Was spielst Du am liebsten?",
+createdAt: "2019-12-22T08:23:18.216Z",
+updatedAt: "2019-12-22T08:23:18.216Z",
+answers: [
+{
+id: 225,
+answer: "Bier-Pong.",
+questionId: 82,
+nxt: "c37",
+createdAt: "2019-12-23T21:22:06.938Z",
+updatedAt: "2019-12-23T21:22:06.938Z"
+},
+{
+id: 226,
+answer: "Jass.",
+questionId: 82,
+nxt: "c40",
+createdAt: "2019-12-23T21:22:06.938Z",
+updatedAt: "2019-12-23T21:22:06.938Z"
+},
+{
+id: 227,
+answer: "Tichu.",
+questionId: 82,
+nxt: "c39",
+createdAt: "2019-12-23T21:22:06.939Z",
+updatedAt: "2019-12-23T21:22:06.939Z"
+},
+{
+id: 228,
+answer: "Jazzy.",
+questionId: 82,
+nxt: "c41",
+createdAt: "2019-12-23T21:22:06.939Z",
+updatedAt: "2019-12-23T21:22:06.939Z"
+}
+]
+},
+{
+id: 83,
+projectId: 6,
+question: "Was darf nicht fehlen?",
+createdAt: "2019-12-22T08:23:18.216Z",
+updatedAt: "2019-12-22T08:23:18.216Z",
+answers: [
+{
+id: 229,
+answer: "12 Trauben, eine pro Glockenschlag.",
+questionId: 83,
+nxt: "q85",
+createdAt: "2019-12-23T21:22:06.939Z",
+updatedAt: "2019-12-23T21:22:06.939Z"
+},
+{
+id: 230,
+answer: "Der Countdown.",
+questionId: 83,
+nxt: "q84",
+createdAt: "2019-12-23T21:22:06.939Z",
+updatedAt: "2019-12-23T21:22:06.939Z"
+},
+{
+id: 231,
+answer: "Dinner for one.",
+questionId: 83,
+nxt: "q78",
+createdAt: "2019-12-23T21:22:06.940Z",
+updatedAt: "2019-12-23T21:22:06.940Z"
+}
+]
+},
+{
+id: 84,
+projectId: 6,
+question: "Wie jetzt?",
+createdAt: "2019-12-22T08:23:18.216Z",
+updatedAt: "2019-12-22T08:23:18.216Z",
+answers: [
+{
+id: 232,
+answer: "The Final Count-Down.",
+questionId: 84,
+nxt: "c37",
+createdAt: "2019-12-23T21:22:06.940Z",
+updatedAt: "2019-12-23T21:22:06.940Z"
+},
+{
+id: 233,
+answer: "Runterzählen bis zur Tischbombe.",
+questionId: 84,
+nxt: "c40",
+createdAt: "2019-12-23T21:22:06.940Z",
+updatedAt: "2019-12-23T21:22:06.940Z"
+}
+]
+},
+{
+id: 85,
+projectId: 6,
+question: "Bist Du Spanier?",
+createdAt: "2019-12-22T08:23:18.217Z",
+updatedAt: "2019-12-22T08:23:18.217Z",
+answers: [
+{
+id: 234,
+answer: "Ja.",
+questionId: 85,
+nxt: "c37",
+createdAt: "2019-12-23T21:22:06.940Z",
+updatedAt: "2019-12-23T21:22:06.940Z"
+},
+{
+id: 235,
+answer: "Nein.",
+questionId: 85,
+nxt: "c40",
+createdAt: "2019-12-23T21:22:06.941Z",
+updatedAt: "2019-12-23T21:22:06.941Z"
+}
+]
+},
+{
+id: 86,
+projectId: 6,
+question: "Wer oder was ist eigentlich Silvester?",
+createdAt: "2019-12-22T08:23:18.217Z",
+updatedAt: "2019-12-22T08:23:18.217Z",
+answers: [
+{
+id: 236,
+answer: "So heisst doch ein Bär im Bärengraben.",
+questionId: 86,
+nxt: "q81",
+createdAt: "2019-12-23T21:22:06.941Z",
+updatedAt: "2019-12-23T21:22:06.941Z"
+},
+{
+id: 237,
+answer: "Du meinst Sylvester Stallone.",
+questionId: 86,
+nxt: "q81",
+createdAt: "2019-12-23T21:22:06.941Z",
+updatedAt: "2019-12-23T21:22:06.941Z"
+},
+{
+id: 238,
+answer: "Das war doch ein Papst.",
+questionId: 86,
+nxt: "q83",
+createdAt: "2019-12-23T21:22:06.941Z",
+updatedAt: "2019-12-23T21:22:06.941Z"
+}
+]
+},
+{
+id: 87,
+projectId: 6,
+question: "Und Du magst Deine betrunkenen Mitmenschen immer noch?",
+createdAt: "2019-12-22T08:23:18.218Z",
+updatedAt: "2019-12-22T08:23:18.218Z",
+answers: [
+{
+id: 239,
+answer: "Ja.",
+questionId: 87,
+nxt: "q81",
+createdAt: "2019-12-27T14:47:46.246Z",
+updatedAt: "2019-12-27T14:47:46.246Z"
+},
+{
+id: 240,
+answer: "Nein.",
+questionId: 87,
+nxt: "c41",
+createdAt: "2019-12-27T14:47:46.248Z",
+updatedAt: "2019-12-27T14:47:46.248Z"
+}
+]
+}
+]
+}

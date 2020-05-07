@@ -2,33 +2,23 @@ const db = require('./index.js');
 
 db.conn.sync().then(() => {
   db.models.Conclusions.update(
-    { conclusion: 'Du bist ein Natur pur-Ei. Der ganze Konsumtrubel rund um Ostern ist Dir ein Dorn im Auge, aber das Fest, das liebst Du! Deshalb frönst Du der Tradition mit Selbstgemachtem. Schliesslich haben das schon Dein Vater und Deine Grossmutter so gehandhabt. Und so lässt Du jede Ostern die gute alte Zwiebelschalensud-Färberei auferstehen.',
-    twittertext: "Ich bin ein Natur pur-Ei, sagt das BZ-Osterorakel. Und Du? Finde es heraus: https://digitalorakel.ch"},
-    { where: { id: 24 } }
-  )
+    {conclusion: "Je feuchter, desto fröhlicher: Du feierst Dich kompromisslos ins Delirium. Vorsätze sind um Mitternacht mit dem letzten Glockenschlag Geschichte, und der Kater am nächsten Morgen sagt laut und deutlich: Es kann nur noch besser werden. Hier kannst Du feiern: Barstreet Festival, Bern. Dancing Jäger, Innerdorf."},
+    { where: { id: 37 } }
+  ),
   db.models.Conclusions.update(
-    { conclusion: 'Du bist ein Kinder-Überraschungs-Ei. Wenn Du kein Kind bist, dann fühlst Du wie eines, oder Du führst Dich auf wie eines. Wenn Deine Erziehungsberechtigten Dich zu Ostern mittels Zuckerüberdosis zu bändigen versuchen, hast Du nichts dagegen. Auch wenn Du nicht weisst, was Ostern ist: Du ahnst, dass es um etwas Wichtiges geht: Um Schokolade nämlich.',
-    twittertext: "Ich bin ein Kinder-Überraschungs-Ei, sagt das BZ-Osterorakel. Und Du? Finde es heraus: https://digitalorakel.ch"},
-    { where: { id: 25 } }
-  )
+    {conclusion: "Du magst es gediegen und lässt Dir eine Feier unter Deinesgleichen nicht nehmen, schliesslich ist Silvester die letzte Gelegenheit, richtig viel Geld auszugeben. Aber bitte nicht zu stürmisch, denk an Dein Herz und Deinen Ruf. Hier kannst Du feiern: Casino Bern. GoGreen, Gstaad."},
+    { where: { id: 38 } }
+  ),
   db.models.Conclusions.update(
-    { conclusion: 'Du bist ein opulentes Ei. Mehr ist mehr, das weisst Du, denn Du lebst überschwänglich und/oder bist Katholik. Nicht nur an Ostern: Du lässt Dich nicht durch elitäre Stilpäpste zur Besonnenheit verdonnern, davon zeugen eventuell auch die farbigen Highlights Deiner aufgestellten Kurzhaarfrisur. Lass es krachen!',
-  twittertext: "Ich bin ein opulentes Ei, sagt das BZ-Osterorakel. Und Du? Finde es heraus: https://digitalorakel.ch"},
-    { where: { id: 26 } }
-  )
+    {conclusion: "Silvester ist für Dich zwar der Wurmfortsatz der vom Konsum vereinnahmten Weihnachtszeit, andererseits gibt es überhaupt keinen Grund, eine gute Gelegenheit zum Feiern auszulassen. Denn jede Revolution beginnt mit einer guten Party. Hier wird man Dich antreffen: Reitschule, Bern. Chessu, Biel."},
+    { where: { id: 39 } }
+  ),
   db.models.Conclusions.update(
-    { conclusion: 'Du bist ein leeres Nest. Dein Osternestchen bleibt leider leer, denn entweder hast Du es nicht anders verdient, Du Osterbanause! Oder aber Du findest, die armen Tiere hätten es nicht verdient, für Deinen Genuss den Kopf hinzuhalten. Verdient oder unverdient: Du überlasst das Feiern gerne anderen und hast sicher Besseres vor.',
-  twittertext: "Ich bin ein leeres Nest, sagt das BZ-Osterorakel. Und Du? Finde es heraus: https://digitalorakel.ch"},
-    { where: { id: 27 } }
-  )
+    {conclusion: "Letztlich mobilisierst Du wohl doch wieder die letzten Unentschiedenen und lädst sie zum Silvesterschmaus nach Hause ein. Tradition ist Tradition. Ein Last-Minute-Fondue-Chinoise lässt sich schliesslich immer irgendwo auftreiben. Hier feierst Du: In der guten Stube, und um Mitternacht gehts zum Cüpli auf den Balkon."},
+    { where: { id: 40 } }
+  ),
   db.models.Conclusions.update(
-    { conclusion: 'Du bist ein Fabergé-Ei. Deine Erwartung ans Osternestchen fallen eher unbescheiden aus. Klar, man pflegt einen angemessenen Lebenswandel, Deine Durchlaucht hat sich diesen Status schliesslich schwer erarbeitet oder ihn schwer geerbt. Überheblich? Das sagen jetzt alle Neider, klar. Wenn die wüssten, welche Last so ein Nestchen mit sich bringt!',
-    twittertext: "Ich bin ein Fabergé-Ei, sagt das BZ-Osterorakel. Und Du? Finde es heraus: https://digitalorakel.ch"},
-    { where: { id: 28 } }
-  )
-  db.models.Conclusions.update(
-    { conclusion: 'Du bist ein vorgefärbtes Supermarkt-Ei! Ein Ei ist ein Ei und alles andere ist einerlei. Du weisst, dass man sich kein Bein auszureissen braucht, ein ganz gewöhnliches Osterei vom Grossverteiler tuts auch, alles andere ist Schönfärberei. Hauptsache beim Eiertütschen beweist Dein Ei den dickeren Schädel. (Tipp: die roten sind die Besten!)',
-    twittertext: "Ich bin ein vorgefärbtes Supermarkt-Ei, sagt das BZ-Osterorakel. Und Du? Finde es heraus: https://digitalorakel.ch"},
-    { where: { id: 29 } }
+    {conclusion: "Du bist eher vom Typ Spassbremse und/oder Eltern von Spassbremsen. Über die Stränge schlagen? Sicher nicht! Morgen gehts früh aus den Federn. Falls nicht Deine Bälger Dich dazu nötigen, gibt es gute Gründe: Nie sind die Skipisten leerer als am Neujahrsmorgen. Hier kannst Du hin: Skipiste. Festival Touch the Mountains, Interlaken."},
+    { where: { id: 41 } }
   )
 });

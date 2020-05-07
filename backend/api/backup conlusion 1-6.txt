@@ -1,0 +1,151 @@
+Project 1
+0	
+id	1
+conclusion	"Glückwunsch! Deine Seele ist rein und Dein Tun tugendhaft. Du umsorgst Deine Liebsten wie Maria, die sich aufopfernd um Baby Jesus gekümmert hat. Ist Deine Lieblingsfarbe Blau? Das passt, denn Maria wird in der Krippe fast immer mit einem blauen Mantel gezeigt. Diese Farbsymbolik ist sowohl im Alten wie auch im Neuen Testament zu finden. Blau wird beschrieben als himmlische Farbe und als Symbol für den Glauben und die Treue."
+1	
+id	2
+conclusion	"Respekt, Du bist die Hauptfigur. Ohne Jesus keine Krippe. Du bist engagiert und setztst Dich mit Haut und Haar für eine gute Sache ein, bist Du einmal davon überzeugt. Du bist leidenschaftlich und begeisterungsfähig, hast es aber nicht immer leicht. Kritiker und Neider säumen Deinen Weg, und auf Deinen Schultern lastet die Aufgabe, die Welt ein bisschen besser zu machen."
+2	
+id	3
+conclusion	"Du bist nicht jemand, der ständig im Mittelpunkt stehen will. Du funktionierst besser im Hintergrund. Als Beschützer, der die Lage unter Kontrolle behält, ohne aufzufallen. Josef wird in der Krippe mit Laterne oder auf einen Stab gestützt dargestellt. Die Laterne ist zentral, weil Josef als Bewacher des Lichts gilt, das mit der Geburt von Jesus die Welt erleuchtet."
+3	
+id	4
+conclusion	"Wenn Du redest, hört man Dir gern zu. Du bist sympathisch, eloquent und hast eine natürliche Autorität – wie der Verkündigungsengel, der den Hirten die frohe Botschaft über die Geburt von Jesus überbringt. Zudem bist Du schnell, und Dein Sinn für Pünktlichkeit hilft Dir, immer zur richtigen Zeit am richtigen Ort zu sein."
+4	
+id	5
+conclusion	"Du bist hier gelandet, weil Du entweder schwierig oder unpünktlich bist. Kurz: Du bist das Kamel. Das Höckertier kam mit den drei Königen als Letztes zur Krippe. Gemäss Kirchenkalender wird es – gemeinsam mit seinen Begleitern Elefant und Pferd – erst am 6. Januar zur Krippe dazugestellt."
+5	
+id	6
+conclusion	"Pardon, aber Du bist stur wie ein Esel. Dafür gehörst Du zur «Urformation» der Krippe. Der Esel ist genauso wenig von der Krippe wegzudenken wie Maria, Josef und das Jesuskind."
+6	
+id	7
+conclusion	"Du reist gern und nimmst für besondere Erlebnisse in fernen Ländern auch gern ein paar Strapazen in Kauf. Die drei Weisen respektive die drei Könige symbolisieren im Krippenspiel drei Kontinente: Caspar repräsentiert Afrika und bringt Myrrhe, Melchior steht für Europa und schenkt Gold, Balthasar symbolisiert Asien und trägt Weihrauch bei sich."
+7	
+id	8
+conclusion	"Du packst gern mit an und schleppst das Gepäck am liebsten selbst? Du bist das geborene Lastentier: strapazierfähig und stark. Wofür Esel und Ochse genau stehen, ist je nach Auslegung unterschiedlich: Für die einen symbolisieren sie den Islam und das Judentum. Für die anderen steht der Esel für alle heidnischen Völker, während der Ochse mit dem Christentum gleichgesetzt wird."
+8	
+id	9
+conclusion	"Falls Du die Fragen des Entscheidungsbaums wahrheitsgetreu beantwortet hast, machen wir uns ein wenig Sorgen um Dich: Schafe und Lämmer sind das Symbol für Wehrlosigkeit und unschuldiges Leiden. Dabei ist das Schaf enorm wichtig. Es bringt Wolle, Milch und Fleisch und dem Menschen ein überlegenes Gefühl. Also Kopf hoch: Es ist eigentlich das Schaf, das die Welt gerettet hat."
+
+
+
+
+Project2
+	
+0	
+id	10
+conclusion	"Du bist die Nüsse, Du Nuss!"
+1	
+id	11
+conclusion	"Du bist die böse Stiefmutter, Du Miesepeter!"
+2	
+id	12
+conclusion	"Du bist das Aschenbrödel – als Mann verkleidet!"
+3	
+id	13
+conclusion	"Du bist die weise Eule!"
+4	
+id	14
+conclusion	"Mach kein langes Gesicht, Du bist das Pferd!"
+5	
+id	15
+conclusion	"Du bist zu beneiden, Du Brödel!"
+6	
+id	16
+conclusion	"Ein Prinz, ein Prinz! (Ja, Du bist gemeint.)"
+7	
+id	17
+conclusion	"Guck ruhig so sauer, Du bist die Stiefschwester!"
+
+
+
+Project3
+	
+0	
+id	18
+conclusion	"Du bist ein Kind. Schau Dir etwas Altersgerechtes auf KIKA an."
+1	
+id	19
+conclusion	"Wirklich, Du feierst am liebsten Deinen eigenen Geburtstag? Das ist äusserst egozentrisch und zur Strafe gibt es darum zu Silvester ein Fernsehverbot!"
+2	
+id	20
+conclusion	"«Dinner for One» kennst Du nur vom Hörensagen. Silvester bedeutet für Dich bloss eins: Party! Niemals wird Dich jemand am 31. Dezember vor dem Fernseher antreffen. Am Neujahrtag kurierst Du den Kater dann im Bett aus. Nutze die Gelegenheit und bilde Dich kulturell weiter, in dem Du das traditionelle «Neujahrskonzert» guckst. Es gibt schliesslich noch andere Musik als jene von DJ Antoine."
+3	
+id	21
+conclusion	"Egal ob Ostern, Pfingsten oder 1. August: An Feiertagen willst Du es vor allem lustig haben. Zu Weihnachten amüsierst Du Dich über die medienkritische Komödie «Scrooged» und zum neuen Jahr darf es ebenfalls eine Produktion mit Bill Murray in der Hauptrolle sein, und zwar die Monsterjäger-Komödie «Ghostbusters II» (1989) von Ivan Reitman. Ein Dämon lässt unter New York einen rosa Schleimstrom fliessen. Zur Bekämpfung muss die Freiheitsstatue persönlich aufgeboten werden."
+4	
+id	22
+conclusion	"Du magst es klassisch – beim Festen wie beim Fernsehen. An Weihnachten schaust Du  «It’s a Wonderful Life» mit James Stewart und an Silvester zum Beispiel den US-Gaunerfilm «Ocean’s 11» (1960) von Lewis Milestone. Darin beschliesst Danny Ocean (Frank Sinatra), dass der 31. Dezember der geeignetste Tag sei, Millionen von Dollarn aus einem Casino in Las Vegas zu stehlen. Dabei hilft Sinatra natürlich sein «Rat Pack» Dean Martin und Sammy Davis Jr."
+5	
+id	23
+conclusion	"Du magst es auch zum Jahreswechsel kitschig und schaust am besten «New Year’s Eve» (2011) von Garry Marshall. Der US-Episodenfilm versucht zwar vergeblich, an die Kinokunst des weihnächtlichen Vorbilds «Love Actually» anzuknüpfen, aber der schwergewichtige Cast (Robert de Niro, Sarah Jessica Parker, Jon Bon Jovi, Halle Berry, Hillary Swank, Jessica Biel...) sorgt für Schmetterlinge im Bauch, Herzschmerz, Herzklopfen – und ja, auch das eine oder andere Tränchen der Rührung."
+
+
+
+
+Project 4
+	
+0	
+id	30
+conclusion	"«Wenn wir erklimmen schwindelnde Höhen...» Ganz klar, Du bist ein Wandervogel. Und im Berner Oberland, zum Beispiel am Oeschinensee, am besten aufgehoben."
+1	
+id	31
+conclusion	"Einfach mal Ruhe, nichts tun, an der Sonne schwitzen und Glace essen. Bei Sommerferien in einem Bungalow am Meer kommst Du ins Schwärmen."
+2	
+id	32
+conclusion	"Warum hast Du diesen Test überhaupt gemacht? Du weisst doch, wo Dir am Wohlsten ist: Zu Hause in Balkonien, nahe den eigenen vier Wänden, nichts tun, nirgendwohin reisen."
+3	
+id	33
+conclusion	"Alka-Selzer eingepackt? Ansonsten kann ich nicht garantieren, dass Du bei Deinen Partyferien in Ibiza bis zum Schluss durchhältst."
+4	
+id	34
+conclusion	"Du willst von allem ein bisschen. Und bitte ja nicht dorthin, wo alle anderen sind. Ich schicke Dich auf einen Roadtrip durch Albanien. Berge, Meer, Abenteuer und Kultur."
+5	
+id	35
+conclusion	"Du magst es einfach und unkompliziert. Beim Campen am Neuenburgersee - in Gampelen fühlt man sich ja fast wie am Meer! – kommst Du voll auf Deine Kosten."
+6	
+id	36
+conclusion	"Dir ist nur Hochkultur gehoben genug. An den Bayreuther Festspielen fühlst Du Dich rundum wohl - und bist von Gleichgesinnten umgeben."
+
+
+
+Project 5
+	
+0	
+id	24
+conclusion	"Du bist ein Natur pur-Ei. Der ganze Konsumtrubel rund um Ostern ist Dir ein Dorn im Auge, aber das Fest, das liebst Du! Deshalb frönst Du der Tradition mit Selbstgemachtem. Schliesslich haben das schon Dein Vater und Deine Grossmutter so gehandhabt. Und so lässt Du jede Ostern die gute alte Zwiebelschalensud-Färberei auferstehen."
+1	
+id	25
+conclusion	"Du bist ein Kinder-Überraschungs-Ei. Wenn Du kein Kind bist, dann fühlst Du wie eines, oder Du führst Dich auf wie eines. Wenn Deine Erziehungsberechtigten Dich zu Ostern mittels Zuckerüberdosis zu bändigen versuchen, hast Du nichts dagegen. Auch wenn Du nicht weisst, was Ostern ist: Du ahnst, dass es um etwas Wichtiges geht: Um Schokolade nämlich."
+2	
+id	26
+conclusion	"Du bist ein opulentes Ei. Mehr ist mehr, das weisst Du, denn Du lebst überschwänglich und/oder bist Katholik. Nicht nur an Ostern: Du lässt Dich nicht durch elitäre Stilpäpste zur Besonnenheit verdonnern, davon zeugen eventuell auch die farbigen Highlights Deiner aufgestellten Kurzhaarfrisur. Lass es krachen!"
+3	
+id	27
+conclusion	"Du bist ein leeres Nest. Dein Osternestchen bleibt leider leer, denn entweder hast Du es nicht anders verdient, Du Osterbanause! Oder aber Du findest, die armen Tiere hätten es nicht verdient, für Deinen Genuss den Kopf hinzuhalten. Verdient oder unverdient: Du überlasst das Feiern gerne anderen und hast sicher Besseres vor."
+4	
+id	28
+conclusion	"Du bist ein Fabergé-Ei. Deine Erwartung ans Osternestchen fallen eher unbescheiden aus. Klar, man pflegt einen angemessenen Lebenswandel, Deine Durchlaucht hat sich diesen Status schliesslich schwer erarbeitet oder ihn schwer geerbt. Überheblich? Das sagen jetzt alle Neider, klar. Wenn die wüssten, welche Last so ein Nestchen mit sich bringt!"
+5	
+id	29
+conclusion	"Du bist ein vorgefärbtes Supermarkt-Ei! Ein Ei ist ein Ei und alles andere ist einerlei. Du weisst, dass man sich kein Bein auszureissen braucht, ein ganz gewöhnliches Osterei vom Grossverteiler tuts auch, alles andere ist Schönfärberei. Hauptsache beim Eiertütschen beweist Dein Ei den dickeren Schädel. (Tipp: die roten sind die Besten!)"
+
+
+
+Project 6
+	
+0	
+id	37
+conclusion	"Je feuchter desto fröhlicher: Du feierst Dich kompromisslos ins Delirium. Allfällige Vorsätze sind um Mitternacht mit dem letzten Glockenschlag schon Geschichte und der Kater am nächsten Morgen sagt laut und deutlich: Es kann nur noch besser werden. Hier kannst Du feiern: Barstreet Festival, Bern. Dancing Jäger, Innerdorf."
+1	
+id	38
+conclusion	"Du magst es gediegen und lässt Dich eine Feier unter deinesgleichen nicht nehmen, schliesslich ist Silvester die letzte Gelegenheit, richtig viel Geld auszugeben. Aber bitte nicht zu stürmisch, denk an Dein Herz, an Dein Hüftgelenk und/oder Deinen guten Ruf. Hier kannst Du feiern: Casino Bern, XYZ..."
+2	
+id	39
+conclusion	"Silvester ist für Dich zwar der Wurmfortsatz des vom Konsum vereinnahmten Weihnachtsfests, andererseits gibt es überhaupt keinen Grund, eine gute Gelegenheit zum Feiern auszulassen. Denn jede Revolution beginnt mit einer guten Party. Hier wird man Dich antreffen: Reitschule."
+3	
+id	40
+conclusion	"Letztlich mobilisierst Du wohl doch wieder die letzten Unentschiedenen und lädst sie zum Silvesterschmaus nach Hause ein. Tradition ist Tradition. Ein Last-Minute-Fondue-Chinoise lässt sich schliesslich immer irgendwo auftreiben. Hier feierst Du: In der guten Stube, und um Mitternacht gehts zum Cüpli auf den Balkon."
+4	
+id	41
+conclusion	"Du bist eher vom Typ Spassbremse und/oder Eltern von Spassbremsen. Morgen ist auch wieder ein Tag, wo kommen wir denn hin, wenn wir andauernd über die Stränge schlagen. Am Morgen gehts früh aus den Federn. Falls nicht Deine Bälge Dich dazu nötigen gibt es gute Gründe: Nie sind die Skipisten leerer als am Neujahrsmorgen um 9. Hier kannst Du hin: Skipiste, Festival Touch the Mountains, Interlaken."
